@@ -10,7 +10,7 @@
   <style>
     body {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       height: 100vh;
     }
@@ -47,12 +47,34 @@
       height: 300px;
       border-radius: 8px;
     }
+
+    .box-blue {
+      background-color: blue;
+      transition: width 1s linear 1s;
+    }
+
+    .box-blue:hover {
+      transition: width 2s ease-in-out 0s;
+      width: 350px;
+    }
+
+    .box-yellow {
+      background-color: yellow;
+      transition: opacity 2s linear 1s;
+    }
+
+    .box-yellow:hover {
+      opacity: 0;
+      transition: opacity 1s lineargit add cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    }
   </style>
 </head>
 
 <body>
   <div class="box box-red"></div>
   <div class="box box-green"></div>
+  <div class="box box-blue"></div>
+  <div class="box box-yellow"></div>
 
 </body>
 
